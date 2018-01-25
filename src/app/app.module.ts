@@ -35,6 +35,13 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { StoryComponent } from './story/story.component';
+import { CountdownComponent } from './countdown/countdown.component';
+import { LocationComponent } from './location/location.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { GuestbookComponent } from './guestbook/guestbook.component';
+import { RsvpComponent } from './rsvp/rsvp.component';
 
 /**
  * NgModule that includes all Material modules that are required to serve 
@@ -83,13 +90,21 @@ import { AppComponent } from './app.component';
     MatToolbarModule,
     MatTooltipModule,
     MatNativeDateModule,
-  ]
+  ],
+  declarations: []
 })
 export class MaterialModule {}
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigationComponent,
+    StoryComponent, 
+    CountdownComponent, 
+    LocationComponent,
+    GalleryComponent, 
+    GuestbookComponent, 
+    RsvpComponent
   ],
   imports: [
     BrowserModule,
