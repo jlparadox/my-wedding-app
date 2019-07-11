@@ -69,7 +69,7 @@ export class PeoplePage implements OnInit  {
     const userList = this.db.collection('/users').valueChanges();
     userList.subscribe((users) => {
       let colCounter = 1;
-      users.forEach(function (userDetail: User) {
+      users.forEach( (userDetail: User) => {
         if (colCounter === 1) {
           scope.currentColSpan = scope.getRandomInt(2, 3);
         } else {

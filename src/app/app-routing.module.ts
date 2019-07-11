@@ -16,9 +16,17 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },
   {
-    path: 'rsvp',
-    loadChildren: './list/rsvp.module#RsvpPageModule'
-  }
+    path: 'user-profile',
+    loadChildren: './user-profile/user-profile.module#UserProfilePageModule'
+  },
+  // {
+  //   path: 'user-profile',
+  //   loadChildren: './user-profile/user-profile.module#UserProfileModule'
+  // },
+  // {
+  //   path: 'rsvp',
+  //   loadChildren: './rsvp/rsvp.module#RsvpPageModule'
+  // }
 ];
 
 @NgModule({

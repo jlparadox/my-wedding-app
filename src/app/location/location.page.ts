@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { MediaChange, ObservableMedia } from '@angular/flex-layout';
+import { MediaChange, MediaObserver } from '@angular/flex-layout';
 import { GalleryItem, GalleryConfig, ImageItem, ThumbnailsPosition } from '@ngx-gallery/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 import { map } from 'rxjs/operators';
@@ -17,8 +17,8 @@ export class LocationPage implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
   images: GalleryItem[];
-  constructor(media: ObservableMedia) {
-    this.media$ = media.asObservable().pipe(
+  constructor(media: MediaObserver) {
+    this.media$ = media.media$.pipe(
         map((res: MediaChange) => {
           if (res.mqAlias === 'sm' || res.mqAlias === 'xs') {
             return {
