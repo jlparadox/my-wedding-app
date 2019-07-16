@@ -16,13 +16,41 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },
   {
-    path: 'user-profile',
-    loadChildren: './user-profile/user-profile.module#UserProfilePageModule'
+    path: 'calendar-location',
+    loadChildren: './calendar-location/calendar-location.module#CalendarLocationPageModule'
   },
-  // {
-  //   path: 'user-profile',
-  //   loadChildren: './user-profile/user-profile.module#UserProfileModule'
-  // },
+  {
+    path: 'invitation',
+    loadChildren: './invitation/invitation.module#InvitationPageModule'
+  },
+  {
+    path: 'location',
+    loadChildren: './location/location.module#LocationPageModule'
+  },
+  {
+    path: 'greetings',
+    loadChildren: './greetings/greetings.module#GreetingsPageModule'
+  },
+  {
+    path: 'groom-bride',
+    loadChildren: './groom-bride/groom-bride.module#GroomBridePageModule'
+  },
+  {
+    path: 'people',
+    loadChildren: './people/people.module#PeoplePageModule'
+  },
+  {
+    path: 'rsvp',
+    loadChildren: './rsvp/rsvp.module#RsvpPageModule'
+  },
+  {
+    path: 'story',
+    loadChildren: './story/story.module#StoryPageModule'
+  },
+  {
+    path: 'user-profile',
+    loadChildren: './user-profile/user-profile.module#UserProfileModule'
+  },
   // {
   //   path: 'rsvp',
   //   loadChildren: './rsvp/rsvp.module#RsvpPageModule'

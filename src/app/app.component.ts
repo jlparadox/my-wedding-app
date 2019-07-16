@@ -19,6 +19,51 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Our Story',
+      url: '/story',
+      icon: 'face'
+    },
+    {
+      title: 'Calendar',
+      url: '/calendar-location',
+      icon: 'face'
+    },
+    {
+      title: 'Greetings',
+      url: '/greetings',
+      icon: 'face'
+    },
+    {
+      title: 'Groom & Bride',
+      url: '/groom-bride',
+      icon: 'face'
+    },
+    {
+      title: 'Invitation',
+      url: '/invitation',
+      icon: 'face'
+    },
+    {
+      title: 'Location',
+      url: '/location',
+      icon: 'face'
+    },
+    {
+      title: 'Guests',
+      url: '/people',
+      icon: 'face'
+    },
+    {
+      title: 'RSVP',
+      url: '/rsvp',
+      icon: 'face'
+    },
+    {
+      title: 'User',
+      url: '/user-profile',
+      icon: 'face'
     }
   ];
 
